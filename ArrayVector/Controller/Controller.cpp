@@ -25,12 +25,16 @@ void Controller:: playWithVector()
     }
     
     vector<string> stringVector;
+    string vectorCopy [stringVector.size()];
     stringVector.push_back("hello");
     stringVector.push_back("hi there");
     
     for (int i = 0; i < stringVector.size(); i++)
     {
         cout << stringVector[i] << endl;
+        vectorCopy[i] = stringVector[i];
+        cout << vectorCopy[i] << endl;
+        
     }
 
 }
